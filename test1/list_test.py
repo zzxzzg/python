@@ -56,3 +56,18 @@ print(list1)
 
 # 11	list.copy()
 #复制列表
+
+
+
+#列表推导式
+#通常应用程序将一些操作应用于某个序列的每个元素，用其获得的结果作为生成新列表的元素，或者根据确定的判定条件创建子序列。
+vec = [2, 4, 6]
+vec2 = [3*x for x in vec]
+print(vec2)
+
+vec3 = [[x, x**2] for x in vec]
+print(vec3)
+
+#我们可以用 if 子句作为过滤器
+vec4 = [3*x for x in vec if x > 3]
+

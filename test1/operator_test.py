@@ -40,3 +40,10 @@ if ( a is not b ):
    print ("4 - a 和 b 没有相同的标识")
 else:
    print ("4 - a 和 b 有相同的标识")
+
+# 相当于 c = a? b:c
+a = [1,2]
+b=1
+c=2
+d = a and b or c
+print(d)
